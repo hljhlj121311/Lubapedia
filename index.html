@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鲁能巴蜀百科 - 鲁能巴蜀中学维基项目</title>
+    <style>
+        :root {
+            --primary-color: #6a0dad;
+            --secondary-color: #9b59b6;
+            --text-color: #333;
+            --bg-color: #fff;
+        }
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+        }
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0.5rem 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f0e68c;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+        .main-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            background-color: #f0f0f0;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+        .img-container {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .news-item, .exchange-item {
+            background-color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>鲁能巴蜀百科</h1>
+        <p>鲁能巴蜀中学维基项目 - 真实、可靠的知识平台</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#intro">学校介绍</a></li>
+            <li><a href="#features">学校特色</a></li>
+            <li><a href="#activities">学生活动</a></li>
+            <li><a href="#news">新闻动态</a></li>
+            <li><a href="#exchange">师生交流</a></li>
+            <li><a href="#gallery">图片库</a></li>
+            <li><a href="#links">友情链接</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main-content">
+            <section id="intro">
+                <h2>学校介绍</h2>
+                <blockquote>
+                    <p><em>巍巍巴蜀，薪火相传；鲁能新风，浩然正气。</em></p>
+                    <p><em>立德树人，追求卓越；厚积薄发，桃李芬芳。</em></p>
+                    <p><em>鲁能巴蜀，育才摇篮；展翅高飞，放眼天下。</em></p>
+                </blockquote>
+                <p>重庆鲁能巴蜀中学是重庆市江北区所属的公立完全中学。学校始建于2007年9月，由重庆鲁能开发（集团）有限公司和重庆巴蜀中学联合创办，原为民办学校。2021年8月，根据国家相关规定，学校由江北区政府接管，成为公立中学。多年来，学校秉承"育人为本，质量立校"的理念，培养了众多优秀人才，在重庆市教育界赢得了良好的口碑。</p>
+                <div class="img-container">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23eee'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='18' fill='%23333'%3E学校全景图%3C/text%3E%3C/svg%3E" alt="鲁能巴蜀中学全景图">
+                </div>
+            </section>
+            <section id="features">
+                <h2>学校特色</h2>
+                <p>鲁能巴蜀中学致力于培养全面发展的优秀学生。学校特色包括：</p>
+                <ul>
+                    <li>优质的教育资源：与重庆市多所重点高校合作，引进优秀教师资源</li>
+                    <li>丰富的课外活动：设有30多个学生社团，涵盖科技、艺术、体育等多个领域</li>
+                    <li>先进的教学设施：配备智能化教室、科学实验室、图书馆等现代化教学设施</li>
+                    <li>深厚的文化底蕴：传承巴蜀文化，开设特色课程，培养学生的人文素养</li>
+                </ul>
+                <div class="img-container">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23eee'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='18' fill='%23333'%3E学校特色活动剪影%3C/text%3E%3C/svg%3E" alt="鲁能巴蜀中学特色活动剪影">
+                </div>
+            </section>
+            <section id="activities">
+                <h2>学生活动</h2>
+                <p>我们的百科详细记录了学校的各种学生活动，包括：</p>
+                <ul>
+                    <li>体育赛事：校运会、篮球联赛、足球杯赛等</li>
+                    <li>文化节：每年举办的校园文化艺术节，展示学生才艺</li>
+                    <li>科技创新大赛：鼓励学生参与科技创新项目</li>
+                    <li>社团活动：定期举办社团成果展示会</li>
+                    <li>志愿服务：组织学生参与社区服务，培养社会责任感</li>
+                </ul>
+            </section>
+            <section id="gallery">
+                <h2>图片库</h2>
+                <div class="gallery">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect width='150' height='150' fill='%23eee'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='14' fill='%23333'%3E校园风光1%3C/text%3E%3C/svg%3E" alt="校园风光1">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect width='150' height='150' fill='%23eee'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='14' fill='%23333'%3E校园活动2%3C/text%3E%3C/svg%3E" alt="校园活动2">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect width='150' height='150' fill='%23eee'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='14' fill='%23333'%3E学生风采3%3C/text%3E%3C/svg%3E" alt="学生风采3">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect width='150' height='150' fill='%23eee'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='14' fill='%23333'%3E教学设施4%3C/text%3E%3C/svg%3E" alt="教学设施4">
+                </div>
+            </section>
+        </div>
+        <div class="sidebar">
+            <section id="news">
+                <h2>新闻动态</h2>
+                <div class="news-item">
+                    <h3>2024年春季开学典礼圆满举行</h3>
+                    <p>3月1日，鲁能巴蜀中学2024年春季开学典礼在学校大礼堂隆重举行。校长致辞勉励同学们珍惜时光，奋发图强。</p>
+                </div>
+                <div class="news-item">
+                    <h3>我校学生在市级英语演讲比赛中获佳绩</h3>
+                    <p>高二(3)班李明同学在重庆市高中生英语演讲比赛中荣获一等奖，为校争光。</p>
+                </div>
+            </section>
+            <section id="exchange">
+                <h2>师生交流</h2>
+                <div class="exchange-item">
+                    <h3>每周一问</h3>
+                    <p>欢迎同学们在此提出关于学习或生活的问题，我们会邀请相关老师进行解答。</p>
+                </div>
+                <div class="exchange-item">
+                    <h3>教师专栏</h3>
+                    <p>定期更新教师们的教学心得、学习方法分享等内容。</p>
+                </div>
+            </section>
+            <section id="links">
+                <h2>友情链接</h2>
+                <ul>
+                    <li><a href="#">重庆市教育委员会</a></li>
+                    <li><a href="#">江北区教育委员会</a></li>
+                    <li><a href="#">重庆巴蜀中学</a></li>
+                    <li><a href="#">鲁能集团</a></li>
+                    <li><a href="#">学校官方网站</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 鲁能巴蜀百科 - NLBS中学维基项目</p>
+        <p>我们致力于提供真实、可靠的内容，绝不传播任何关于学校的不实信息。</p>
+    </footer>
+</body>
+</html>
